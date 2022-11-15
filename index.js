@@ -46,6 +46,10 @@ Handlebars.registerHelper('date', function(str) {
 	}
 });
 
+Handlebars.registerHelper("endDatePresent", function (date) {
+    return date == "present";
+});
+
 Handlebars.registerHelper('award', function(str) {
 	switch (str.toLowerCase()) {
 		case "bachelor":

@@ -148,7 +148,7 @@
                             </div>
                             <div class="timeline-header">
                                 <h3>{{position}}</h3>
-                                <p>{{date startDate}} - {{date endDate}}</p>
+                                <p>{{date startDate}} - {{#if (endDatePresent endDate)}}Present{{else}}{{date endDate}}{{/if}}</p>
                             </div>
                             <div class="timeline-content">
                                 <h4>{{name}}</h4>
@@ -254,7 +254,7 @@
             <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
                 <div class="bgrid folio-item">
                     <div class="item-wrap">
-                        <img src="schema.png" alt="Schema">
+                        <img src="assets/schema.png" alt="Schema">
                         <a href="#modal-01" class="overlay">
                             <div class="folio-item-table">
                                 <div class="folio-item-cell">
@@ -269,7 +269,7 @@
                 </div>
                 <div class="bgrid folio-item">
                     <div class="item-wrap">
-                        <img src="firebase.png" alt="Firebase">
+                        <img src="assets/firebase.png" alt="Firebase">
                         <a href="#modal-02" class="overlay">
                             <div class="folio-item-table">
                                 <div class="folio-item-cell">
@@ -284,7 +284,7 @@
                 </div>
                 <div class="bgrid folio-item">
                     <div class="item-wrap">
-                        <img src="themes.png"alt="Themes">
+                        <img src="assets/themes.png"alt="Themes">
                         <a href="#modal-03" class="overlay">
                             <div class="folio-item-table">
                                 <div class="folio-item-cell">
@@ -505,7 +505,7 @@
             </div>
             <h5>Location</h5>
             <p>
-                Dallas, TX, USA
+                Seattle, WA, USA
             </p>
         </div>
         <div class="col-four tab-full collapse">
